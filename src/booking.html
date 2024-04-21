@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Trip</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<header class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="destinations.html">Destinations</a>
+            <a class="nav-link" href="guide.html">Guide</a>
+            <a class="nav-link active" href="booking.html">Book a Trip</a>
+        </div>
+    </nav>
+    <h1>Book Your Trip</h1>
+</header>
+<div class="container mt-3">
+    <form>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="form-group">
+            <label>Number of People:</label>
+            <div>
+                <label><input type="radio" name="people" value="1"> 1</label>
+                <label><input type="radio" name="people" value="2"> 2</label>
+                <label><input type="radio" name="people" value="3"> 3</label>
+                <label><input type="radio" name="people" value="4"> 4</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Location:</label>
+            <div>
+                <label><input type="radio" name="location" value="Budapest"> Budapest</label>
+                <label><input type="radio" name="location" value="Gyor"> Gyor</label>
+                <label><input type="radio" name="location" value="Debrecen"> Debrecen</label>
+                <label><input type="radio" name="location" value="Eger"> Eger</label>
+                <label><input type="radio" name="location" value="Sopron"> Sopron</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="specialNeeds">Any Special Needs:</label>
+            <textarea class="form-control" id="specialNeeds"></textarea>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" name="" id="newsletter">
+            <label for="newsletter">Subscribe to newsletter.</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Book Now</button>
+        <button type="reset" class="btn btn-secondary">Reset Form</button>
+    </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    // Add any JavaScript enhancements here
+</script>
+</body>
+</html>

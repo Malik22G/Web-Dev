@@ -21,59 +21,51 @@
         color: white;
         text-align: center;
         position: relative;
-        padding-top: 20vh; /* Adjust the padding to place your content where you want it */
+        padding-top: 20vh;
     }
-    .navbar {
-        background: rgba(255, 255, 255, 0.8); /* Gives a transparency to the navbar */
-    }
+
     .btn-primary {
-        background-color: #3775b8; /* Adjust the color to match your design */
+        background-color: #3775b8;
     }
     .container {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Center children horizontally */
-        margin-bottom: 50px; /* Spacing from the bottom */
+        align-items: center;
+        margin-bottom: 50px; 
     }
     .video-container {
         position: relative;
-        padding-bottom: 40%; /* 16:9 aspect ratio */
+        padding-bottom: 40%; 
         height: 0;
-        overflow: hidden; /* Add this to ensure the content outside of this container is not visible */
+        overflow: hidden;
     }
     
     .video-container iframe {
         position: relative;
-        border: 3px solid black; /* If you want the border, otherwise set it to none */
+        border: 3px solid black; 
     }
     
     .video-footer {
         width: 100%;
         text-align: center;
         padding: 20px;
-        background-color: #f1f1f1; /* Light grey background */
+        background-color: #f1f1f1;
     }
 </style>
 </head>
 <body>
 <div class="bg">
     <header class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">Travel Site</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
-                    <li class="nav-item"><a class="nav-link" href="guide.html">Guide</a></li>
-                    <li class="nav-item"><a class="nav-link" href="booking.html">Book a Trip</a></li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="destinations.html">Destinations</a>
+                <a class="nav-link" href="guide.html">Guide</a>
+                <a class="nav-link" href="booking.html">Book a Trip</a>
             </div>
         </nav>
         <h1>Discover story-worthy travel moments</h1>
-        <a href="#" class="btn btn-primary">Select Destinations</a>
+        <a href="./destinations.html" class="btn btn-primary">Select Destinations</a>
     </header>
 </div>
 <div class="container">
@@ -81,7 +73,7 @@
     <div class="video-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/luDSbWpzWG8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    </div>
     <div class="video-footer">
-        Footer With contacts and feedback
+        Footer
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
