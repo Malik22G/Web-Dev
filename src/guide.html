@@ -4,36 +4,63 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Guide</title>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="./darkmode.css">
+<script src="darkmode.js"></script>
+
+<style>
+    body, html {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        background-color: #f8f9fa;
+        
+    }
+    a:link, a:visited {
+        color: black;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+</style>
 </head>
 <body>
 <header class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="navbar-nav">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="destinations.html">Destinations</a>
-            <a class="nav-link active" href="guide.html">Guide</a>
-            <a class="nav-link" href="booking.html">Book a Trip</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Discover Travel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="destinations.html">Destinations</a>
+                <a class="nav-link active" href="guide.html">Guide</a>
+                <a class="nav-link" href="booking.html">Book a Trip</a>
+            </div>
+          </div>
         </div>
-    </nav>
+      </nav>
     <h1>Hungary Travel Guide 101</h1>
 </header>
 <div class="container mt-3">
-    <article>
-        <h3>The Buda Castle</h3>
-        <p>Embark on a journey through time at The Buda Castle, the historical castle and palace complex of the Hungarian kings in Budapest. Perched majestically above the city on Castle Hill, it offers panoramic views of the Danube and a glimpse into Hungary's royal past. Stroll through the courtyards, explore the lush gardens, and marvel at the castle's baroque architecture. With its art museums and the National Széchényi Library housed within its walls, the Buda Castle is not just a relic of history, but a living, breathing cultural hub. </p>
-    </article>
-    <article>
-        <h3>Shoes on the Danube Bank</h3>
-        <p>Pause and reflect at the poignant memorial on the Danube Bank, the 'Shoes on the Danube.' This evocative installation commemorates the Jews who were executed here during World War II. It's a sobering reminder of the city's darker times, inviting visitors to pay their respects and contemplate the resilience of the human spirit. The trail of shoes cast in iron, each pair telling its silent story, is a powerful testament to those lost, and a place where history's echo is felt most deeply.</p>
-    </article>
-    <article>
-        <h3>Esztergom Basilica</h3>
-        <p>Visit the Esztergom Basilica, a beacon of religious significance and architectural grandeur. As the largest church in Hungary, it stands as a monumental ode to classical architecture. Its lofty dome, visible from miles around, invites the faithful and curious alike. Step inside to witness the ornate altarpiece and the echoes of organ music, or climb to the cupola for an awe-inspiring view of the Danube bend. The Basilica is not only a place of worship but also a symbol of Hungarian resilience and pride, standing tall in the historic city of Esztergom.</p>
-    </article>
+    <section>
+        <article>
+            <h3>The Buda Castle</h3>
+            <p>Embark on a journey through time at The Buda Castle, the historical castle and palace complex of the Hungarian kings in Budapest. Perched majestically above the city on Castle Hill, it offers panoramic views of the Danube and a glimpse into Hungary's royal past. Stroll through the courtyards, explore the lush gardens, and marvel at the castle's baroque architecture. With its art museums and the National Széchényi Library housed within its walls, the Buda Castle is not just a relic of history, but a living, breathing cultural hub.</p>
+        </article>
+        <article>
+            <h3>Shoes on the Danube Bank</h3>
+            <p>Pause and reflect at the poignant memorial on the Danube Bank, the 'Shoes on the Danube.' This evocative installation commemorates the Jews who were executed here during World War II. It's a sobering reminder of the city's darker times, inviting visitors to pay their respects and contemplate the resilience of the human spirit. The trail of shoes cast in iron, each pair telling its silent story, is a powerful testament to those lost, and a place where history's echo is felt most deeply.</p>
+        </article>
+        <article>
+            <h3>Esztergom Basilica</h3>
+            <p>Visit the Esztergom Basilica, a beacon of religious significance and architectural grandeur. As the largest church in Hungary, it stands as a monumental ode to classical architecture. Its lofty dome, visible from miles around, invites the faithful and curious alike. Step inside to witness the ornate altarpiece and the echoes of organ music, or climb to the cupola for an awe-inspiring view of the Danube bend. The Basilica is not only a place of worship but also a symbol of Hungarian resilience and pride, standing tall in the historic city of Esztergom.</p>
+        </article>
+    </section>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

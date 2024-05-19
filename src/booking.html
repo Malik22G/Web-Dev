@@ -4,66 +4,87 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Book a Trip</title>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link rel="stylesheet" href="./darkmode.css">
+<script src="darkmode.js"></script>
+
+<style>
+    body, html {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        background-color: #f8f9fa;
+        height: 100%;
+        margin: 0;
+    }
+</style>
 </head>
+
 <body>
 <header class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="navbar-nav">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="destinations.html">Destinations</a>
-            <a class="nav-link" href="guide.html">Guide</a>
-            <a class="nav-link active" href="booking.html">Book a Trip</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Discover Travel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="destinations.html">Destinations</a>
+                <a class="nav-link" href="guide.html">Guide</a>
+                <a class="nav-link active" href="booking.html">Book a Trip</a>
+            </div>
+          </div>
         </div>
-    </nav>
+      </nav>
     <h1>Book Your Trip</h1>
 </header>
 <div class="container mt-3">
-    <form>
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" required>
-        </div>
-        <div class="form-group">
-            <label>Number of People:</label>
-            <div>
-                <label><input type="radio" name="people" value="1"> 1</label>
-                <label><input type="radio" name="people" value="2"> 2</label>
-                <label><input type="radio" name="people" value="3"> 3</label>
-                <label><input type="radio" name="people" value="4"> 4</label>
+    <form action="mailto:malik.basit3690@gmail.com" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Booking Information</legend>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name = "Name" class="form-control" id="name" required>
             </div>
-        </div>
-        <div class="form-group">
-            <label>Location:</label>
-            <div>
-                <label><input type="radio" name="location" value="Budapest"> Budapest</label>
-                <label><input type="radio" name="location" value="Gyor"> Gyor</label>
-                <label><input type="radio" name="location" value="Debrecen"> Debrecen</label>
-                <label><input type="radio" name="location" value="Eger"> Eger</label>
-                <label><input type="radio" name="location" value="Sopron"> Sopron</label>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name = "Email" class="form-control" id="email" required>
             </div>
-        </div>
-        <div class="form-group">
-            <label for="specialNeeds">Any Special Needs:</label>
-            <textarea class="form-control" id="specialNeeds"></textarea>
-        </div>
-        <div class="form-check">
-            <input type="checkbox" name="" id="newsletter">
-            <label for="newsletter">Subscribe to newsletter.</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Book Now</button>
-        <button type="reset" class="btn btn-secondary">Reset Form</button>
+            <div class="form-group">
+                <label>Number of People:</label>
+                <div>
+                    <label><input type="radio" name="People" value="1"> 1</label>
+                    <label><input type="radio" name="People" value="2"> 2</label>
+                    <label><input type="radio" name="People" value="3"> 3</label>
+                    <label><input type="radio" name="People" value="4"> 4</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Location:</label>
+                <div>
+                    <label><input type="radio" name="Location" value="Budapest"> Budapest</label>
+                    <label><input type="radio" name="Location" value="Gyor"> Gyor</label>
+                    <label><input type="radio" name="Location" value="Debrecen"> Debrecen</label>
+                    <label><input type="radio" name="Location" value="Eger"> Eger</label>
+                    <label><input type="radio" name="Location" value="Sopron"> Sopron</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="specialNeeds">Any Special Needs:</label>
+                <textarea class="form-control" id="specialNeeds" name="Special Need"></textarea>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <label for="newsletter">Subscribe to newsletter.</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Book Now</button>
+            <button type="reset" class="btn btn-secondary">Reset Form</button>
+        </fieldset>
     </form>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script>
-    // Add any JavaScript enhancements here
-</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
 </body>
 </html>
