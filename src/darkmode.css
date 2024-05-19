@@ -11,7 +11,7 @@
     background-color: #3b658d;
 }
 
-.dark-mode .video-footer {
+.dark-mode .footer {
     background-color: #1a252f;
 }
 
@@ -33,3 +33,4 @@
 .dark-mode .table strong{
     color: #ffffff;
 }
+
