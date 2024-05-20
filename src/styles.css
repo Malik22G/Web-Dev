@@ -14,7 +14,7 @@ footer a:link {
 
 footer a:visited {
     color: #06a445;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .heading {
@@ -126,4 +126,8 @@ header {
     .gallery .destination-item {
         width: 100%;
     }
+}
+.collapsed {
+    max-height: 4.5em; 
+    overflow: hidden;
 }
