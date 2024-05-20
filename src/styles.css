@@ -12,15 +12,12 @@ footer a:link {
     text-decoration: underline;
 }
 
-
-
-
 footer a:visited {
-    color:#06a445;
+    color: #06a445;
     text-decoration: none;
 }
 
-.heading{
+.heading {
     color: black;
 }
 
@@ -80,6 +77,17 @@ header {
     justify-content: space-between;
 }
 
+.gallery-section {
+    width: 100%;
+    text-align: center; 
+}
+
+.gallery-heading {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem; 
+}
+
 .table {
     margin-top: 1.25rem;
 }
@@ -91,30 +99,28 @@ header {
 .Home-Text {
     margin-top: 10rem;
 }
-@media(max-width:1024px){
 
-    .gallery{
- 
-      max-width: 75%;}
+@media(max-width:1024px){
+    .gallery {
+        width: 75%;
     }
+}
 
 @media(max-width:768px){
-
-    .gallery{
+    .gallery {
         width: 100%;
     }
-    .gallery .destination-item{
- 
-      width: 50%;}
+    .gallery .destination-item {
+        width: 50%;
     }
+}
 
 @media(max-width:600px){
-    .gallery{
+    .gallery {
         flex-direction: column;
         width: 100%;
     }
-    .gallery .destination-item{
- 
-      width: 100%;}
+    .gallery .destination-item {
+        width: 100%;
     }
-
+}
